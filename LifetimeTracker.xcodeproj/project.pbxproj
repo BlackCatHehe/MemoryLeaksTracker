@@ -36,6 +36,14 @@
 		8933C78E1EB5B82C000D00A4 /* LifetimeTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* LifetimeTrackerTests.swift */; };
 		8933C78F1EB5B82C000D00A4 /* LifetimeTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* LifetimeTrackerTests.swift */; };
 		8933C7901EB5B82D000D00A4 /* LifetimeTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* LifetimeTrackerTests.swift */; };
+		C16EE41D2A7B7F2900DABC6F /* ViewController+AutoDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16EE41C2A7B7F2900DABC6F /* ViewController+AutoDetect.swift */; };
+		C16EE41E2A7B7F2900DABC6F /* ViewController+AutoDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16EE41C2A7B7F2900DABC6F /* ViewController+AutoDetect.swift */; };
+		C16EE41F2A7B7F2900DABC6F /* ViewController+AutoDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16EE41C2A7B7F2900DABC6F /* ViewController+AutoDetect.swift */; };
+		C16EE4202A7B7F2900DABC6F /* ViewController+AutoDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16EE41C2A7B7F2900DABC6F /* ViewController+AutoDetect.swift */; };
+		C16EE4222A7B935400DABC6F /* Object+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16EE4212A7B935400DABC6F /* Object+Swizzle.swift */; };
+		C16EE4232A7B935400DABC6F /* Object+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16EE4212A7B935400DABC6F /* Object+Swizzle.swift */; };
+		C16EE4242A7B935400DABC6F /* Object+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16EE4212A7B935400DABC6F /* Object+Swizzle.swift */; };
+		C16EE4252A7B935400DABC6F /* Object+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16EE4212A7B935400DABC6F /* Object+Swizzle.swift */; };
 		CD2064CF1F7EB44E00E8CBBD /* DeallocTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4DD721F29F70700F01611 /* DeallocTracker.swift */; };
 		CD2064D01F7EB45A00E8CBBD /* DeallocTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4DD721F29F70700F01611 /* DeallocTracker.swift */; };
 		CD2064D11F7EB45F00E8CBBD /* DeallocTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4DD721F29F70700F01611 /* DeallocTracker.swift */; };
@@ -99,6 +107,8 @@
 		8933C7891EB5B82A000D00A4 /* LifetimeTrackerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifetimeTrackerTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* LifetimeTracker.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LifetimeTracker.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* LifetimeTrackerTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LifetimeTrackerTests.plist; sourceTree = "<group>"; };
+		C16EE41C2A7B7F2900DABC6F /* ViewController+AutoDetect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+AutoDetect.swift"; sourceTree = "<group>"; };
+		C16EE4212A7B935400DABC6F /* Object+Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object+Swizzle.swift"; sourceTree = "<group>"; };
 		CDA4DD721F29F70700F01611 /* DeallocTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeallocTracker.swift; sourceTree = "<group>"; };
 		DD75027A1C68FCFC006590AF /* LifetimeTracker-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LifetimeTracker-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD75028D1C690C7A006590AF /* LifetimeTracker-tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LifetimeTracker-tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +236,8 @@
 				8933C7841EB5B820000D00A4 /* LifetimeTracker.swift */,
 				4A563B27228C9655009C389D /* Localizable.strings */,
 				7A31DF67278FE63B0008250C /* Bundle+Extensions.swift */,
+				C16EE41C2A7B7F2900DABC6F /* ViewController+AutoDetect.swift */,
+				C16EE4212A7B935400DABC6F /* Object+Swizzle.swift */,
 				7A31DF5C278FE5E70008250C /* Resources */,
 			);
 			path = Sources;
@@ -595,6 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC5210022F1C64200748998 /* DashboardTableViewController.swift in Sources */,
+				C16EE41D2A7B7F2900DABC6F /* ViewController+AutoDetect.swift in Sources */,
 				EFC5210522F1C64200748998 /* LifetimeTracker+DashboardView.swift in Sources */,
 				EFC520F922F1C64200748998 /* BarDashboardViewController.swift in Sources */,
 				EFC5210422F1C64200748998 /* HideOption.swift in Sources */,
@@ -602,6 +615,7 @@
 				EFC520F722F1C64200748998 /* SettingsManager.swift in Sources */,
 				87EDDFA21FB527E700F1D107 /* Extensions.swift in Sources */,
 				7A31DF68278FE63B0008250C /* Bundle+Extensions.swift in Sources */,
+				C16EE4222A7B935400DABC6F /* Object+Swizzle.swift in Sources */,
 				EFC5210122F1C64200748998 /* DashboardTableViewHeaderView.swift in Sources */,
 				8933C7851EB5B820000D00A4 /* LifetimeTracker.swift in Sources */,
 				EFC520FB22F1C64200748998 /* CircularDashboardViewController.swift in Sources */,
@@ -628,6 +642,8 @@
 			files = (
 				CD2064D01F7EB45A00E8CBBD /* DeallocTracker.swift in Sources */,
 				7A31DF6A278FE63B0008250C /* Bundle+Extensions.swift in Sources */,
+				C16EE4242A7B935400DABC6F /* Object+Swizzle.swift in Sources */,
+				C16EE41F2A7B7F2900DABC6F /* ViewController+AutoDetect.swift in Sources */,
 				8933C7871EB5B820000D00A4 /* LifetimeTracker.swift in Sources */,
 				87EDDF901FB5275B00F1D107 /* Constants.swift in Sources */,
 				87EDDFAC1FB5291500F1D107 /* Extensions.swift in Sources */,
@@ -640,6 +656,8 @@
 			files = (
 				CD2064D11F7EB45F00E8CBBD /* DeallocTracker.swift in Sources */,
 				7A31DF6B278FE63B0008250C /* Bundle+Extensions.swift in Sources */,
+				C16EE4252A7B935400DABC6F /* Object+Swizzle.swift in Sources */,
+				C16EE4202A7B7F2900DABC6F /* ViewController+AutoDetect.swift in Sources */,
 				8933C7881EB5B820000D00A4 /* LifetimeTracker.swift in Sources */,
 				87EDDF911FB5275C00F1D107 /* Constants.swift in Sources */,
 				87EDDFAD1FB5291500F1D107 /* Extensions.swift in Sources */,
@@ -652,6 +670,8 @@
 			files = (
 				CD2064CF1F7EB44E00E8CBBD /* DeallocTracker.swift in Sources */,
 				7A31DF69278FE63B0008250C /* Bundle+Extensions.swift in Sources */,
+				C16EE4232A7B935400DABC6F /* Object+Swizzle.swift in Sources */,
+				C16EE41E2A7B7F2900DABC6F /* ViewController+AutoDetect.swift in Sources */,
 				8933C7861EB5B820000D00A4 /* LifetimeTracker.swift in Sources */,
 				87EDDF8F1FB5275A00F1D107 /* Constants.swift in Sources */,
 				87EDDFAB1FB5291400F1D107 /* Extensions.swift in Sources */,

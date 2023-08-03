@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 /// Holds the properties which are needed to configure a `LifetimeTrackable`
 @objc public final class LifetimeConfiguration: NSObject {
     
@@ -115,6 +115,46 @@ public extension LifetimeTrackable {
 }
 
 @objc public final class LifetimeTracker: NSObject {
+    public static var isEnabled = false {
+        didSet {
+            if isEnabled {
+                if !isStarting {
+                    isStarting = true
+                    swizzle(
+                        selector: #selector(UIViewController.viewDidLoad),
+                        with: #selector(UIViewController.memory_viewDidLoad),
+                        inClass: UIViewController.self,
+                        usingClass: UIViewController.self
+                    )
+
+                    setup(
+                        onUpdate: LifetimeTrackerDashboardIntegration(
+                            visibility: .alwaysVisible,
+                            style: .circular
+                        )
+                        .refreshUI
+                    )
+                } else {
+                    LifetimeTracker.configure(
+                        updateClosure: LifetimeTrackerDashboardIntegration(
+                            visibility: .alwaysVisible,
+                            style: .circular
+                        )
+                        .refreshUI
+                    )
+                }
+            } else {
+                LifetimeTracker.configure(
+                    updateClosure: LifetimeTrackerDashboardIntegration(
+                        visibility: .alwaysHidden,
+                        style: .circular
+                    )
+                    .refreshUI
+                )
+            }
+        }
+    }
+    private static var isStarting = false
     public typealias UpdateClosure = (_ trackedGroups: [String: LifetimeTracker.EntriesGroup]) -> Void
     public internal(set) static var instance: LifetimeTracker?
     public typealias LeakClosure = (_ entry: LifetimeTracker.Entry,

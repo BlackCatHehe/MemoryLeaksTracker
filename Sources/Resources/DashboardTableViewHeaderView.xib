@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,8 +24,8 @@
                         <constraint firstAttribute="width" constant="10" id="dd4-4d-A4o"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSD-gq-zyC">
-                    <rect key="frame" x="20" y="6" width="335" height="18"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSD-gq-zyC">
+                    <rect key="frame" x="20" y="5" width="335" height="20"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -33,6 +33,7 @@
             </subviews>
             <constraints>
                 <constraint firstItem="O7g-rc-Ex7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5dN-HS-J09"/>
+                <constraint firstAttribute="bottom" secondItem="NSD-gq-zyC" secondAttribute="bottom" constant="5" id="Ftw-Vj-guS"/>
                 <constraint firstItem="Tld-27-AII" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KgJ-LM-FmW"/>
                 <constraint firstItem="O7g-rc-Ex7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lc1-7V-Xfy"/>
                 <constraint firstAttribute="bottom" secondItem="Tld-27-AII" secondAttribute="bottom" id="RZW-16-MQQ"/>
@@ -41,6 +42,7 @@
                 <constraint firstAttribute="trailing" secondItem="O7g-rc-Ex7" secondAttribute="trailing" id="fuA-5b-KEC"/>
                 <constraint firstAttribute="trailing" secondItem="NSD-gq-zyC" secondAttribute="trailing" constant="20" id="lWo-Rm-Wcj"/>
                 <constraint firstItem="Tld-27-AII" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="odv-eO-PiJ"/>
+                <constraint firstItem="NSD-gq-zyC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="uaY-DD-Ezl"/>
                 <constraint firstItem="NSD-gq-zyC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vf0-Nb-teb"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -49,7 +51,7 @@
                 <outlet property="groupNameLabel" destination="NSD-gq-zyC" id="fwH-29-HTt"/>
                 <outlet property="indicatorView" destination="Tld-27-AII" id="W6K-47-klJ"/>
             </connections>
-            <point key="canvasLocation" x="33.5" y="-261"/>
+            <point key="canvasLocation" x="32.799999999999997" y="-261.76911544227886"/>
         </view>
     </objects>
     <resources>
